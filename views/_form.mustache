@@ -1,0 +1,66 @@
+
+{{#validationError}}
+  <strong>Card wasn't saved because of your errors</strong>
+{{/validationError}}
+
+<div class="">
+  <label for="firstName">First Name</label>
+  <input type="text" name="firstName" value="{{card.firstName}}">
+  {{#validationError.errors.firstName}}
+    First Name is required!
+  {{/validationError.errors.firstName}}
+</div>
+
+<div class="">
+  <label for="lastName">Last Name</label>
+  <input type="text" name="lastName" value="{{card.lastName}}">
+  {{#validationError.errors.lastName}}
+    Last name is required!
+  {{/validationError.errors.lastName}}
+</div>
+
+<div class="">
+  <label for="team">Team</label>
+  <input type="text" name="team" value="{{card.team}}">
+  {{#validationError.errors.team}}
+    Team is required
+  {{/validationError.errors.team}}
+</div>
+
+<div class="">
+  <label for="position">Position</label>
+  <input type="text" name="position" value="{{card.position}}">
+  {{#validationError.errors.position}}
+    Position is required!
+  {{/validationError.errors.position}}
+</div>
+
+<div class="">
+  <label for="year">Year</label>
+  <input type="text" name="year" value="{{card.year}}">
+  {{#validationError.errors.year}}
+    Year is required!
+  {{/validationError.errors.year}}
+</div>
+
+<div class="">
+  <label for="number">Number</label>
+  <input type="text" name="number" value="{{card.number}}">
+  {{#validationError.errors.number}}
+    Number is required!
+  {{/validationError.errors.number}}
+</div>
+
+<div class="">
+  <label for="rookie">Rookie?</label>
+  <input type="radio" name="rookie" value="true">True
+  <input type="radio" name="rookie" value="false">False
+  {{#validationError.errors.rookie}}
+    Rookie status is required!
+  {{/validationError.errors.rookie}}
+</div>
+
+
+<div class="">
+  <input type="submit" name="" value="Save Card">
+</div>

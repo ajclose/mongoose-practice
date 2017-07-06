@@ -1,0 +1,19 @@
+
+<div class="cards">
+
+
+    {{#cards}}
+    <div class="card">
+
+
+    <h3 class="name">{{firstName}} {{lastName}}</h3>
+    <h4 class="team">{{team}}</h4>
+    <h4>#{{number}} - {{position}}</h4>
+    <h5>{{year}}</h5>
+    {{#rookie}}
+      <p>Rookie</p>
+    {{/rookie}}
+          <a href="/cards/{{_id}}/edit">Edit</a>
+    </div>
+    {{/cards}}
+    </div>
